@@ -1,0 +1,114 @@
+/* .main-header__layout{
+    top:50px !important;
+    } */
+
+.eael-testimonial-user-company{
+    display:block !important;
+}
+
+.elementor-element-1e69014 .elementor-widget-container{
+    min-height:250px !important;
+}
+
+.elementor-element-1eb7388 .elementor-widget-container{
+    min-height:250px !important;
+}
+
+.elementor-element-692efde .elementor-widget-container{
+    min-height:250px !important;
+}
+.elementor-element-96d86af .elementor-widget-container{
+    min-height:250px !important;
+}
+
+.elementor-3263 .elementor-element.elementor-element-8036281 .eael-filterable-gallery-item-wrap .eael-gallery-grid-item{
+    background-color:white;
+}
+.elementor-element-828fc78 .eael-testimonial-item{
+    border-radius:10px;
+}
+
+/* below code is added by sardaralikhamosh for debusing the chages  */
+
+    .ms-slider--cont a.btn.btn-circle.btn--md {
+    margin: 0;
+}
+    .btn-wrap .ms-btn--label {
+    width: 185px !important;
+    text-align: left !important;
+    margin-top: -32px !important;
+    padding-left: 38px !important;
+}
+/* button styling starts */
+    .btn-wrap .ms-btn--label {
+    background: linear-gradient(to right, #f9d423, #ff4e50);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Button text */
+.btn-wrap .ms-btn--label .ms-btn__text {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    padding-right: 40px; /* Increased space for arrow with background */
+}
+
+/* Add arrow with white background using ::after */
+.btn-wrap .ms-btn--label .ms-btn__text::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='18' height='18'%3E%3Cpath fill='%23FF6B35' d='M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hover Effect */
+.btn-wrap .ms-btn--label:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 20px rgba(255, 119, 71, 0.4);
+}
+
+/* Hover effect for arrow */
+.btn-wrap .ms-btn--label:hover .ms-btn__text::after {
+    transform: translateY(-50%) translateX(2px);
+    transition: transform 0.3s ease;
+}
+/* button stylings ends */
+
+.btn-wrap .ms-btn__border,
+.btn-wrap .ms-btn--circle{
+    display: none;
+}
+/*  for only destop */
+@media screen and (min-width:600px){
+    .main-header__logo {
+    margin-top: 30px;
+}
+}
+
+/* for mobile only */
+@media screen and (max-width:600px){
+    .ms-slider--cont .btn-wrap{
+        margin-top: 2rem !important;
+    }
+}
