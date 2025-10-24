@@ -40,7 +40,7 @@
 }
 
 .modal-content {
-    background-color: #f2f0eb;
+    background-color: #373a3f;
     margin: 10% auto;
     padding: 30px;
     border-radius: 8px;
@@ -58,11 +58,11 @@
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    color: #373A3F;
+    color: #f2f0eb;
 }
 
 .close-modal:hover {
-    color: #000;
+    color: #f25606;
 }
 
 .form-group {
@@ -85,7 +85,8 @@
     border-radius: 4px;
     font-family: 'Agrandir Regular', sans-serif;
     box-sizing: border-box;
-    color: #373A3F;
+    color: #f2f0eb;
+    background:#373A3F;
 }
 
 .form-group textarea {

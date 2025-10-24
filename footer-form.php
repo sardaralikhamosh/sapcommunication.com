@@ -1,4 +1,5 @@
-<div class="service-contact-section" style="background-color: #f2f0eb; color: #373A3F; font-family: 'Agrandir Regular', sans-serif; border-radius: 20px;">
+
+<div class="service-contact-section" style="color: #373A3F; font-family: 'Agrandir Regular', sans-serif; border-radius: 20px;">
     <div class="service-selection">
         <h2 style="color: #373A3F;">Select a Service</h2>
         <div class="service-tabs">
@@ -22,21 +23,21 @@
     <div class="contact-form-modal" id="contactFormModal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <h2 style="color:#373A3F">Contact Us</h2>
-            <p>You've selected: <span id="selected-service-text"></span></p>
+            <h2 style="color:#f2f0eb">Contact Us</h2>
+            <p style="color:#f2f0eb">You've selected: <span style="color:#f2f0eb" id="selected-service-text"></span></p>
             <form id="service-contact-form">
                 <input type="hidden" id="selected-service" name="selected_service">
                 <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required Placeholder="Enter Your Name*">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required Placeholder="Enter Your Email*">
                 </div>
                 <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <label for="message"></label>
+                    <textarea id="message" name="message" required Placeholder="Enter Your Mesage"></textarea>
                 </div>
                 <button type="submit" id="submit-btn" class="custom-buttom">Send Message</button>
                 <div id="form-message" style="margin-top: 15px; display: none;"></div>
@@ -49,7 +50,7 @@
 <div class="success-popup" id="successPopup">
     <div class="success-popup-content">
         <h3 style="color: #155724; margin-bottom: 15px;">✅ Success!</h3>
-        <p id="success-message" style="margin-bottom: 20px; color: #373A3F;">Your message has been sent successfully!</p>
+        <p id="success-message" style="margin-bottom: 20px; color: #373a3f;">Your message has been sent successfully!</p>
         <button class="success-popup-close">Close</button>
     </div>
 </div>

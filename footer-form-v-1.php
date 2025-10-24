@@ -1,3 +1,4 @@
+
 <style type="text/css">
     .service-contact-section {
     padding: 60px 20px;
@@ -41,7 +42,7 @@
 }
 
 .modal-content {
-    background-color: #f2f0eb;
+    background-color: #373a3f;
     margin: 10% auto;
     padding: 30px;
     border-radius: 8px;
@@ -59,11 +60,11 @@
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    color: #373A3F;
+    color: #f2f0eb;
 }
 
 .close-modal:hover {
-    color: #000;
+    color: #f25606;
 }
 
 .form-group {
@@ -86,7 +87,8 @@
     border-radius: 4px;
     font-family: 'Agrandir Regular', sans-serif;
     box-sizing: border-box;
-    color: #373A3F;
+    color: #f2f0eb;
+    background:#373A3F;
 }
 
 .form-group textarea {
@@ -212,7 +214,7 @@ button[type="submit"]:disabled {
     }
 }
 </style>
-<div class="service-contact-section" style="background-color: #f2f0eb; color: #373A3F; font-family: 'Agrandir Regular', sans-serif; border-radius: 20px;">
+<div class="service-contact-section" style="color: #373A3F; font-family: 'Agrandir Regular', sans-serif; border-radius: 20px;">
     <div class="service-selection">
         <h2 style="color: #373A3F;">Select a Service</h2>
         <div class="service-tabs">
@@ -236,21 +238,21 @@ button[type="submit"]:disabled {
     <div class="contact-form-modal" id="contactFormModal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <h2 style="color:#373A3F">Contact Us</h2>
-            <p>You've selected: <span id="selected-service-text"></span></p>
+            <h2 style="color:#f2f0eb">Contact Us</h2>
+            <p style="color:#f2f0eb">You've selected: <span style="color:#f2f0eb" id="selected-service-text"></span></p>
             <form id="service-contact-form">
                 <input type="hidden" id="selected-service" name="selected_service">
                 <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required Placeholder="Enter Your Name*">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required Placeholder="Enter Your Email*">
                 </div>
                 <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <label for="message"></label>
+                    <textarea id="message" name="message" required Placeholder="Enter Your Mesage"></textarea>
                 </div>
                 <button type="submit" id="submit-btn" class="custom-buttom">Send Message</button>
                 <div id="form-message" style="margin-top: 15px; display: none;"></div>
@@ -263,7 +265,7 @@ button[type="submit"]:disabled {
 <div class="success-popup" id="successPopup">
     <div class="success-popup-content">
         <h3 style="color: #155724; margin-bottom: 15px;">✅ Success!</h3>
-        <p id="success-message" style="margin-bottom: 20px; color: #373A3F;">Your message has been sent successfully!</p>
+        <p id="success-message" style="margin-bottom: 20px; color: #373a3f;">Your message has been sent successfully!</p>
         <button class="success-popup-close">Close</button>
     </div>
 </div>
